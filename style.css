@@ -71,6 +71,9 @@
   color: #EEEEEE;
   font-family: "Poppins", serif;
 }
+.swip-btn {
+  text-decoration: none;
+}
 .swip-btn i {
   display: flex;
   align-items: center;
@@ -89,7 +92,7 @@
   background-color: rgba(57, 62, 70, 0.75);
 }
 .about-section {
-  padding: 120px 0px;
+  padding: 150px 0px;
   background-color: #222831;
   color: #fff;
 }
@@ -124,7 +127,7 @@
 .action-form textarea {
   font-family: "Poppins", serif;
   font-size: 16px;
-  color: #fff !important;
+  color: #EEEEEE !important;
   padding: 12px;
   background-color: rgba(57, 62, 70, 0.5);
   border: none;
@@ -148,6 +151,38 @@
   font-size: 16px;
   font-weight: 600;
   font-family: "Poppins", serif;
+}
+.action-form button {
+  color: #EEEEEE;;
+}
+.footer {
+  padding: 120px 0px 40px 0px;
+  background-color: #222831;
+  border-top: 1px solid #d3d3d340;
+}
+.footer-menu a {
+  font-family: "Poppins", serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #EEEEEE;
+  text-decoration: none;
+}
+.social-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  height: 45px;
+  width: 45px;
+  border-radius: 50px;
+  color: #EEEEEE;
+  background-color: #393E46;
+}
+.footer .footer-bottom a {
+  font-family: "Poppins", serif;
+  font-size: 16px;
+  color: rgba(238, 238, 238, 0.75);
+  text-decoration: none;
 }
 
 @media screen and (max-width: 1366px) {
@@ -197,6 +232,9 @@
   }
   .get-in-touch-section {
     padding: 50px 0px;
+  }
+  .footer {
+    padding-top: 60px;
   }
 }
 @media screen and (max-width: 512px) {
