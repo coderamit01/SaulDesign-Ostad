@@ -1,17 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+
 * {
   margin: 0;
   padding: 0;
 }
 .heading-2 {
   font-size: 64px;
-  line-height: 68px;
+  line-height: 76px;
   font-weight: 700;
   font-family: "Poppins", serif;
 }
 .text-brand {
   color: #00ADB5;
+}
+.text-shadow {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
 }
 .header {
   background-color: #222831;
@@ -37,6 +41,7 @@
 .hero-section {
   min-height: 85vh;
   background-color: #222831;
+  margin-bottom: -1px;
 }
 .hero-section .hero-left h1 {
   font-size: 96px;
@@ -65,7 +70,6 @@
 .hero-left .hire-btn {
   color: #EEEEEE;
   font-family: "Poppins", serif;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
 }
 .swip-btn i {
   display: flex;
@@ -85,7 +89,7 @@
   background-color: rgba(57, 62, 70, 0.75);
 }
 .about-section {
-  padding: 90px 0px;
+  padding: 120px 0px;
   background-color: #222831;
   color: #fff;
 }
@@ -103,8 +107,48 @@
 .about-right {
   background-image: url('./img/doodle\ items.png');
 }
-
-
+.recent-work-section {
+  padding: 120px 0px;
+  color: #fff;
+  background-image: url('./img/doodle\ items.png');
+  overlay:auto;
+  background-color: #222831;
+  background-position: center;
+}
+.get-in-touch-section {
+  padding: 120px 0px;
+  background-color: #222831;
+  color: #fff;
+}
+.action-form input,
+.action-form textarea {
+  font-family: "Poppins", serif;
+  font-size: 16px;
+  color: #fff !important;
+  padding: 12px;
+  background-color: rgba(57, 62, 70, 0.5);
+  border: none;
+  outline: none;
+}
+.action-form input::placeholder,
+.action-form textarea::placeholder {
+  color: rgba(238, 238, 238, 0.5);
+  font-family: "Poppins", serif;
+  font-size: 16px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+.action-form input:focus,
+.action-form textarea:focus {
+  background-color: rgba(57, 62, 70, 0.5);
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+.action-form .form-label {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Poppins", serif;
+}
 
 @media screen and (max-width: 1366px) {
   .hero-section .hero-left h1 {
@@ -151,10 +195,18 @@
   .about-section {
     padding: 50px 0px;
   }
+  .get-in-touch-section {
+    padding: 50px 0px;
+  }
 }
 @media screen and (max-width: 512px) {
   .hero-section .hero-left h1 {
     font-size: 45px;
     line-height: 48px;
   }
+  .heading-2 {
+    font-size: 42px;
+    line-height: 52px;
+  }
+
 }
